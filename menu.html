@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú de platos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eee;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #6B4226;
+        }
+
+        .menu-section {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+
+        .menu-item {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .menu-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .menu-item h3 {
+            margin: 15px 0;
+            color: #d9534f;
+        }
+
+        .menu-item p {
+            color: #777;
+            margin: 0 15px 15px;
+            font-size: 14px;
+        }
+
+        .menu-item .price {
+            color: #5cb85c;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .menu-item .price:before {
+            content: 'Precio: ';
+        }
+        header {
+            background-color: #6B4226; /* Café claro */
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #228B22; /* Verde */
+            padding: 10px;
+        }
+
+        nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #6B4226; /* Café claro */
+            color: white;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="pacial.html">Inicio</a>
+        <a href="menu.html">Menú</a>
+        <a href="sevicios.html">Servicios</a>
+    </nav>
+
+    <h1>MENÚ DE COMIDAS </h1>
+
+    <div class="menu-section">
+        <div class="menu-item">
+            <img src="img/qw.avif" alt="Churrasco">
+            <h3>Churrasco Tradicional</h3>
+            <p>Corte premium de carne de res, acompañado de ensalada y arroz.</p>
+            <p class="price">$15.00</p>
+        </div>
+
+        <div class="menu-item">
+            <img src="img/pollo.webp" alt="Pollo a la Parrilla">
+            <h3>Pollo a la Parrilla</h3>
+            <p>Pechuga de pollo marinada a la parrilla, servida con guarniciones.</p>
+            <p class="price">$10.00</p>
+        </div>
+
+        <div class="menu-item">
+            <img src="img/Costillas-de-Cerdo-.jpg" alt="Costillas de Cerdo">
+            <h3>Costillas de Cerdo</h3>
+            <p>Jugosas costillas de cerdo a la parrilla con papas fritas y ensalada.</p>
+            <p class="price">$12.00</p>
+        </div>
+
+        <div class="menu-item">
+            <img src="img/picana.jpg" alt="Picanha">
+            <h3>Picanha</h3>
+            <p>Delicioso corte de carne brasileña a la parrilla con farofa y arroz.</p>
+            <p class="price">$18.00</p>
+        </div>
+
+        <div class="menu-item">
+            <img src="img/salchicha.webp" alt="Salchicha a la Parrilla">
+            <h3>Salchicha a la Parrilla</h3>
+            <p>Salchicha de cerdo a la parrilla con puré de papas y ensalada.</p>
+            <p class="price">$8.00</p>
+        </div>
+
+        <div class="menu-item">
+            <img src="img/ensalada.avif" alt="Ensalada de la Casa">
+            <h3>Ensalada de la Casa</h3>
+            <p>Ensalada fresca con lechuga, tomate, cebolla, y aderezo especial.</p>
+            <p class="price">$5.00</p>
+        </div>
+    </div>
+    <footer>
+        Derechos reservados &copy; 2024
+    </footer>
+    
+</body>
+</html>
